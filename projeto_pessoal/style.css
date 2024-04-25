@@ -1,0 +1,85 @@
+:root {
+ 
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #d7d7d7;
+    --botao-vermelho: #f94747;
+    --cor-de-fundo: #000000;
+    --cor-de-fundo2: #6e6e6e;
+    --fonte-principal: 'Andika';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fonte-principal);
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000000;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+}
+
+header .logo{
+    width: 150px;
+}
+
+.nav_list ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav_list ul li a{
+    color: #d7d7d7;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all .6s;
+}
+
+.nav_list ul li a:hover{
+    border-bottom: 2px solid var(--botao-vermelho);
+     
+}
+
+main{
+    background-image: url(background2.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 2.5em;
+}
+
+main section .logocombo{
+    width: 35em;
+    margin: 3em 0;
+}
+
+main section .btn_box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn_box .btn{
+    padding: 20px 45px;
+    background: var(--botao-vermelho);
+    color: #d7d7d7;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #FFFFFF;
+    transition: all .3s;
+}
+
+.btn_box .btn:hover{
+    background: #6e6e6e;
+}
